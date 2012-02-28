@@ -81,8 +81,17 @@ function calcMsPerBeat(val)
 
 function populateFromURL()
 {
+	if(window.location.hash.length <= 0)
+	{
+		return;
+	}
+
 	var encoded = window.location.hash.substring(1);
 	bpm_encoded = encoded.split("_");
+	if(bpm_encoded.length < 2)
+	{
+		return;
+	}
 
 	$("#txtBPM").val(bpm_encoded[0]);
 	if(!calcMsPerBeat(bpm_encoded[0]))

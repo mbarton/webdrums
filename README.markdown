@@ -5,6 +5,8 @@ A very small naive implementation of an HTML5 drum machine.
 
 A real implementation would use the one of the Web Audio APIs to avoid the hideous timing issues that this version suffers from.
 
+Stores the current state of the machine in the hash part of the URL so if you want to save your pattern, just copy the URL. Paste it back in and force a reload and behold, gabber has never sounded so fresh!
+
 Testing
 -------
 
