@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<title>HTML5 Drum Machine</title>
+<link rel="stylesheet" href="style.css" />
+<ul id="markers">
+	<li class="label"></li>
+	<li class="label">1</li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label">2</li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label">3</li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label">4</li>
+	<li class="label"></li>
+	<li class="label"></li>
+	<li class="label"></li>
+</ul>
+<ul id="kick">
+	<li class="label">Kick</li>
+	<li class="active"></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<ul id="hat">
+	<li class="label">Hat</li>
+	<li class="active"></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<ul id="snare">
+	<li class="label">Snare</li>
+	<li class="active"></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<ul id="crash">
+	<li class="label">Crash</li>
+	<li class="active"></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<section id="controls">
+	<input id="txtBPM" type="number" value="100" />
+	<input id="btnPlay" type="button" value="Play" />
+	<input id="btnStop" type="button" value="Stop" />
+	<input id="btnClear" type="button" value="Clear" />
+</section>
+<section id="audio">
+	<audio id="audkick" src="kick.wav" preload></audio>
+	<audio id="audhat" src="hat.wav" preload></audio>
+	<audio id="audsnare" src="snare.wav" preload></audio>
+	<audio id="audcrash" src="crash.wav" preload></audio>
+</section>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="drums.js"></script>

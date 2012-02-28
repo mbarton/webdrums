@@ -1,0 +1,74 @@
+body
+{
+	background-color: rgb(70,79,105);
+	color: white;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0px 0px;
+	padding: 0;
+	clear: both;
+}
+
+ul#markers li
+{
+	margin: 0px 10px;
+	text-align: center;
+}
+
+ul:nth-child(2) li
+{
+	margin-top: 0px;
+}
+
+li
+{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(122,122,122);
+	float: left;
+	margin: 20px 10px;
+	cursor: pointer;
+}
+
+li:hover
+{
+	background-color: rgb(138,138,138);
+}
+
+li.label
+{
+	background-color: inherit;
+}
+
+li.note
+{
+	background-color: rgb(232, 252, 98);
+}
+
+li.active
+{
+	background-color: rgb(43, 186, 71);
+}
+
+section#controls
+{
+	clear: both;
+	padding: 10px 0px;
+}
+
+section#controls input
+{
+	font-size: 2em;
+	width: 100px;
+	margin-right: 20px;
+}
+
+input.error
+{
+	background-color: red;
+}
